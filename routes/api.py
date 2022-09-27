@@ -1,5 +1,5 @@
 
-from msilib.schema import ProgId
+#from msilib.schema import ProgId
 from turtle import distance, position
 from urllib import response
 from flask import Blueprint, jsonify, request
@@ -194,3 +194,9 @@ def update_flight(flight_id):
             return jsonify({'message':"Error on update"}), 404
     except Exception as ex:
         return jsonify({'message':str(ex)}), 500
+
+
+@main.route('/status')
+def status():
+    return '',204
+        
