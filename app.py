@@ -8,7 +8,7 @@ from routes import api
 
 app=Flask(__name__)
 
-CORS(app,resources={"*": {"origins":"http://localhost:3000"}})
+CORS(app,resources={"*": {"https://git.heroku.com/rest-api-t2.git"}})
 
 def page_not_found(error):
     return "<h1> Page not found </h1>", 404
